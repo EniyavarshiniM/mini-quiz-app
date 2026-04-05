@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+        <h1>Mini Quiz</h1>
+
+        <div id="question"></div>
+
+        <div class="options">
+            <button onclick="checkAnswer(0)" id="opt0"></button>
+            <button onclick="checkAnswer(1)" id="opt1"></button>
+            <button onclick="checkAnswer(2)" id="opt2"></button>
+            <button onclick="checkAnswer(3)" id="opt3"></button>
+        </div>
+
+        <button onclick="nextQuestion()">Next</button>
+
+        <h2 id="score"></h2>
+
+        <!-- Restart Button -->
+        <button onclick="restartQuiz()">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
